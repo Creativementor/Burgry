@@ -1,5 +1,138 @@
-body{
-    background-image: url(/Image/nick-nice-gPm8h3DS1s4-unsplash.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+}
+
+.navbar {
+    height: 5rem;
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+}
+
+.heading-div {
+    display: flex;
+}
+
+.heading_1 {
+    cursor: pointer;
+    font-size: 50px;
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.heading_2 {
+    cursor: pointer;
+    font-size: 50px;
+    color: orange;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+}
+
+ul {
+    display: flex;
+    gap: 40px;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #a0a0a0;
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-size: 16px;
+    font-style: italic;
+    letter-spacing: 0.5px;
+}
+
+a::after {
+    content: "";
+    position: absolute;
+    background-color: orange;
+    height: 1px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.8s;
+}
+
+a:hover {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+a:hover::after {
+    width: 100%;
+}
+
+.btn_1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    font-style: italic;
+    margin-left: -250px;
+    border-radius: 5px;
+    background-color: orange;
+    height: 40px;
+    width: 180px;
+    cursor: pointer;
+}
+
+.btn_1:hover {
+    color: #000000;
+    font-weight: bolder;
+}
+
+.main-container {
+    /* gap: 100px; */
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.border-line {
+    width: 200px;
+    border: 2px solid orange;
+    margin-top: 30px;
+}
+
+.heading {
+    margin-top: -50px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+    font-style: italic;
+    color: #ffffff;
+}
+
+p {
+    margin-top: 40px;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    color: #a0a0a0;
+}
+
+.img-div {
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+.image {
+    border-radius: 80%;
+    width: 550px;
+    height: 600px;
 }
