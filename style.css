@@ -82,7 +82,7 @@ a:hover::after {
     font-weight: 400;
     font-size: 16px;
     font-style: italic;
-    margin-left: -250px;
+    margin-left: -200px;
     border-radius: 5px;
     background-color: orange;
     height: 40px;
@@ -97,6 +97,7 @@ a:hover::after {
 
 .main-container {
     /* gap: 100px; */
+    height: 800px;
     align-items: center;
     display: flex;
     justify-content: space-evenly;
@@ -119,7 +120,7 @@ a:hover::after {
 
 p {
     margin-top: 40px;
-    font-size: 16px;
+    font-size: 14px;
     font-family: "Poppins", sans-serif;
     font-style: italic;
     font-weight: 400;
@@ -127,12 +128,97 @@ p {
 }
 
 .img-div {
-    margin-left: 100px;
     margin-top: 50px;
 }
 
 .image {
-    border-radius: 80%;
-    width: 550px;
-    height: 600px;
+    border-radius: 20px;
+    width: 700px;
+    height: 700px;
+}
+
+.content-div{
+
+}
+
+.icons-div{
+    align-items: center;
+    justify-content: start;
+    gap: 50px;
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(3 , 100px);
+}
+
+.icon {
+    color: rgb(230, 185, 25);
+    font-size: 50px;
+}
+
+.title{
+    font-size: 20px;
+    color: #ffffff;
+    font-family: 'poppins' , sans-serif;
+    font-weight: 400;
+}
+
+.btn{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    font-style: italic;
+    border-radius: 5px;
+    background-color: orange;
+    height: 50px;
+    width: 150px;
+    cursor: pointer;   
+}
+
+.btn:hover {
+    color: #000000;
+    font-weight: bolder;
+}
+
+@media only screen and (max-width: 1500px) {
+    .main-container{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        gap: 100px;
+        margin-top: 200px;
+        flex-direction: column-reverse;
+    }
+
+    .content-div{
+        align-self: center;
+        margin-top: 100px;
+    }
+
+    .heading{
+        font-size: 30px;
+    }
+
+    .img-div{
+        margin-right: 100px;
+    }
+
+    .image{
+        width: 500px;
+        height: 500px;
+    }
+
+    .navbar{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .btn_1{
+        margin-left: -10px;
+    }
+}
+
+@media only scree  and (max-width: 980px) {
+    a{
+        display: none;
+    } 
 }
